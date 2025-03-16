@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Drafting</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="home">
+    <!-- Navigation Bar -->
+    <div id="r1">
+        <div class="nav-left">
+            <a href="home.html" class="tab">Home</a>
+            <a href="services.html" class="tab">Services</a>
+            <a href="about.html" class="tab">About</a>
+            <a href="contact.html" class="tab">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Drafting Section -->
+    <div id="drafting-section">
+        <h1>Legal Document Drafting</h1>
+        <p><b>Enter your requirements and generate customized legal documents using our AI-driven drafting tool.</b></p>
+        
+        <!-- Drafting Form -->
+        <form id="drafting-form" action="draft.php" method="post">
+            <label for="document-type">Select Document Type:</label><br>
+            <select id="document-type" name="document-type">
+                <option value="contract">Contract</option>
+                <option value="agreement">Agreement</option>
+                <option value="NDA">Non-Disclosure Agreement (NDA)</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            
+            <label for="details">Enter Details:</label><br>
+            <textarea id="details" name="details" rows="5" cols="50" placeholder="Enter details of your legal document..." required></textarea><br><br>
+            
+            <input type="submit" value="Generate Document">
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-left">&copy; 2024 Legal Saathi | All rights reserved</div>
+        <div class="footer-center">
+            Follow us on:
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
+        <div class="footer-right">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

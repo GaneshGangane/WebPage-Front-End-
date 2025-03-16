@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-container {
+            width: 100%;
+            max-width: 400px; /* Reduced max-width */
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px; /* Reduced padding */
+            border-radius: 10px; /* Slightly less rounded */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px; /* Reduced margin */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            width: 100%;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="file"] {
+            width: 100%;
+            padding: 10px; /* Reduced padding */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px; /* Reduced font-size */
+            margin-bottom: 15px; /* Reduced margin */
+            box-sizing: border-box;
+            transition: border 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus, input[type="file"]:focus {
+            border-color: #1a73e8;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px; /* Slightly reduced height */
+        }
+
+        button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 15px; /* Reduced padding */
+            border: none;
+            border-radius: 4px;
+            font-size: 14px; /* Reduced font-size */
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #1660bf;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="file"] {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <form>
+        <!-- Name Field -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <!-- Mobile Field -->
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required pattern="[0-9]{10}">
+
+        <!-- Email Field -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <!-- Query/Suggestion Text Area -->
+        <label for="query">Query or Suggestion</label>
+        <textarea id="query" name="query" placeholder="Your Query or Suggestion" required></textarea>
+
+        <!-- File Upload Section -->
+        <label for="file-upload">Upload Document (Optional)</label>
+        <input type="file" id="file-upload" name="file-upload" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx">
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

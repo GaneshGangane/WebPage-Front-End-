@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkcyan;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* About Section */
+        #about {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            width: 80%;
+            max-width: 1200px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            margin-top: 60px;
+            border-radius: 10px;
+        }
+
+        #about h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Profiles Section */
+        #profiles {
+            display: flex;
+            justify-content: space-between; /* Space profiles evenly */
+            flex-wrap: nowrap; /* Prevent wrapping to the next row */
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+            gap: 30px;
+        }
+
+        /* Profile Card Styling */
+        .profile {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 22%; /* Adjusted width to fit 4 profiles side by side */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .profile h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .profile p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 1024px) {
+            #profiles {
+                flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            }
+
+            .profile {
+                width: 45%; /* Two profiles per row for tablets */
+            }
+        }
+
+        @media (max-width: 768px) {
+            #about {
+                width: 90%;
+            }
+
+            .profile {
+                width: 100%; /* One profile per row for mobile devices */
+            }
+        }
+
+        @media (max-width: 480px) {
+            #about {
+                width: 95%;
+            }
+
+            .profile {
+                width: 100%; /* One profile per row on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- About Section -->
+<div id="about">
+    <h2>About Us</h2>
+    <h3>"Legal Saathi" - AI Powered Legal Document Assistant</h3>
+    <p>At our core, we believe that positive thoughts fuel success and growth. With every challenge, there is an opportunity, and with every setback, a chance to rise stronger. Together, we embrace positivity, creativity, and collaboration to achieve our dreams and help others along the way.</p>
+</div>
+
+<!-- Profiles Section -->
+<div id="profiles">
+    <!-- Profile 1 -->
+    <div class="profile">
+        <img src="https://via.placeholder.com/100" alt="Profile Photo">
+        <h3>Anirudha Tiwari</h3>
+        <p>As a scholar with a deep understanding of cyber security and artificial intelligence, Anirudha specializes in applying advanced machine learning techniques to legal document automation. His contributions focus on developing secure, AI-driven solutions that simplify legal processes, ensuring user privacy and data integrity.</p>
+    </div>
+
+    <!-- Profile 2 -->
+    <div class="profile">
+        <img src="https://via.placeholder.com/100" alt="Profile Photo">
+        <h3>Ganesh Gangane</h3>
+        <p>Ganesh is a computer science and engineering scholar with a keen interest in AI and cybersecurity. He plays a pivotal role in enhancing the design and functionality of the AI-powered legal documentation assistant, focusing on user experience, legal compliance, and ensuring the system is both accessible and secure.</p>
+    </div>
+
+    <!-- Profile 3 -->
+    <div class="profile">
+        <img src="https://via.placeholder.com/100" alt="Profile Photo">
+        <h3>Datta Bharde</h3>
+        <p>Datta brings expertise in natural language processing and AI-driven applications to the project. His work primarily focuses on the development and refinement of models that enable the simplification of legal language, ensuring that complex legal documents can be understood by the general public with ease.</p>
+    </div>
+
+    <!-- Profile 4 -->
+    <div class="profile">
+        <img src="https://via.placeholder.com/100" alt="Profile Photo">
+        <h3>Omkar Shitole</h3>
+        <p>Omkar is a dedicated scholar specializing in AI and machine learning applications. His contributions to the project involve the development of intelligent algorithms that automate the drafting of legal documents, streamlining processes for individuals and small businesses while maintaining high accuracy and compliance.</p>
+    </div>
+</div>
+
+</body>
+</html>
